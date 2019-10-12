@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Be+Vietnam|Monda&display=swap");
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Be Vietnam', sans-serif;
+  background: linear-gradient(0deg, #146489, rgba(20, 100, 137, 0.6)); }
+
+html {
+  font-size: 20px;
+  color: #fff; }
+
+.button {
+  margin: 10px;
+  width: 100px;
+  padding: 10px;
+  background-color: #175673;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 0.8rem;
+  transition: 0.3s; }
+  .button:focus {
+    outline: none; }
+  .button:hover {
+    cursor: pointer;
+    background-color: #175673c7;
+    transform: scale(1.1); }
+
+.container {
+  background: linear-gradient(0deg, rgba(20, 100, 137, 0.6), #146489), url(../images/cubism4.jpg);
+  height: 100vh;
+  padding-top: 50px;
+  width: 100%;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 100vh; }
+  .container .header {
+    color: #fff; }
+    .container .header::first-letter {
+      color: yellow; }
+  .container .fa-clipboard-list {
+    font-size: 3rem; }
+  .container .form-add-task {
+    display: -ms-flexbox;
+    display: flex;
+    margin: 50px 0 20px 0;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center; }
+    .container .form-add-task .input-add-task {
+      width: 250px;
+      height: 35px;
+      padding: 5px 10px;
+      font-size: 0.8rem;
+      color: #2d3436; }
+      .container .form-add-task .input-add-task:focus {
+        outline: none; }
+    .container .form-add-task .btn-add-task {
+      width: 100px;
+      background: #D9D121;
+      color: #fff; }
+  .container ul li {
+    list-style-type: none;
+    font-size: 1rem;
+    line-height: 2.5rem; }
+    .container ul li .fa-trash {
+      margin-left: 15px;
+      color: #d06324; }
