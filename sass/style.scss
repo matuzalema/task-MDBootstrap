@@ -17,20 +17,19 @@ body {
 
 html {
     font-size: 20px;
-    color: #fff;
+    color: $font-color;
     
 }
 
 //components
- 
  .button {
     margin: 10px;
     width: 100px;
     padding: 10px;
-    background-color: #175673;
+    background-color: $main-btn-color;
     border: none;
     border-radius: 5px;
-    color: #fff;
+    color: $font-color;
     font-size: 0.8rem;
     transition: 0.3s;
 
@@ -54,7 +53,7 @@ html {
     ),
     url(../images/cubism4.jpg);
     height: 100vh;
-    padding-top: 50px;
+    padding-top: 40px;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -63,9 +62,9 @@ html {
     height: 100vh;
 
     .header {
-        color: #fff;
+        color: $font-color;
         &::first-letter {
-            color: yellow;
+            color: $second-color;
         }
     }
 
@@ -75,7 +74,7 @@ html {
 
     .form-add-task {
         display: flex;
-        margin: 50px 0 20px 0;
+        margin: 30px 0 20px 0;
         flex-direction: row;
         align-items: center;
 
@@ -92,8 +91,8 @@ html {
 
         .btn-add-task {
             width: 100px;
-            background: #D9D121;
-            color: #fff;
+            background: $second-color;
+            color: $font-color;
         }
     }
 
@@ -104,7 +103,14 @@ html {
 
         .fa-trash {
             margin-left: 15px;
-            color: #d06324;
+            color: #FA8225;
+            transition: 0.5s;
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.2);
+                color: #b5561f;
+            }
         }
     }
 }

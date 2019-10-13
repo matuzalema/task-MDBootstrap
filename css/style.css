@@ -32,7 +32,7 @@ html {
 .container {
   background: linear-gradient(0deg, rgba(20, 100, 137, 0.6), #146489), url(../images/cubism4.jpg);
   height: 100vh;
-  padding-top: 50px;
+  padding-top: 40px;
   width: 100%;
   margin: 0 auto;
   display: -ms-flexbox;
@@ -45,13 +45,13 @@ html {
   .container .header {
     color: #fff; }
     .container .header::first-letter {
-      color: yellow; }
+      color: #D9D121; }
   .container .fa-clipboard-list {
     font-size: 3rem; }
   .container .form-add-task {
     display: -ms-flexbox;
     display: flex;
-    margin: 50px 0 20px 0;
+    margin: 30px 0 20px 0;
     -ms-flex-direction: row;
         flex-direction: row;
     -ms-flex-align: center;
@@ -74,4 +74,9 @@ html {
     line-height: 2.5rem; }
     .container ul li .fa-trash {
       margin-left: 15px;
-      color: #d06324; }
+      color: #FA8225;
+      transition: 0.5s; }
+      .container ul li .fa-trash:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+        color: #b5561f; }
