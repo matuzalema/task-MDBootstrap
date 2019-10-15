@@ -13,7 +13,7 @@ html {
   color: #fff; }
 
 .button {
-  margin: 10px;
+  margin: 8px 5px;
   width: 100px;
   padding: 10px;
   background-color: #175673;
@@ -57,26 +57,63 @@ html {
     -ms-flex-align: center;
         align-items: center; }
     .container .form-add-task .input-add-task {
-      width: 250px;
-      height: 35px;
+      width: 350px;
+      height: 38px;
       padding: 5px 10px;
       font-size: 0.8rem;
       color: #2d3436; }
       .container .form-add-task .input-add-task:focus {
         outline: none; }
     .container .form-add-task .btn-add-task {
-      width: 100px;
+      width: 60px;
+      height: 38px;
+      margin-left: -1px;
       background: #D9D121;
-      color: #fff; }
-  .container ul li {
-    list-style-type: none;
-    font-size: 1rem;
-    line-height: 2.5rem; }
-    .container ul li .fa-trash {
-      margin-left: 15px;
-      color: #FA8225;
-      transition: 0.5s; }
-      .container ul li .fa-trash:hover {
-        cursor: pointer;
-        transform: scale(1.2);
-        color: #b5561f; }
+      color: #fff;
+      border-radius: 0 5px 5px 0; }
+      .container .form-add-task .btn-add-task:hover {
+        transform: scale(1);
+        background-color: #cbc419; }
+  .container ul {
+    padding: 0;
+    width: 410px; }
+    .container ul li {
+      list-style-type: none;
+      font-size: 1rem;
+      line-height: 2.5rem; }
+      .container ul li .fa-trash {
+        margin-left: 15px;
+        color: #fff;
+        transition: 0.5s; }
+        .container ul li .fa-trash:hover {
+          cursor: pointer;
+          transform: scale(1.2);
+          color: #b5561f; }
+      .container ul li .fa-user-edit {
+        margin-right: 10px;
+        font-size: 1.1rem;
+        position: relative;
+        top: 3px;
+        transition: 0.5s; }
+        .container ul li .fa-user-edit:hover {
+          cursor: pointer;
+          transform: scale(1.1); }
+      .container ul li .save-btn {
+        margin-right: 10px;
+        padding: 7px 10px;
+        border-radius: 5px;
+        color: #fff;
+        background-color: #07be83;
+        border: none;
+        font-size: 0.8rem;
+        transition: 0.5s; }
+        .container ul li .save-btn:hover {
+          cursor: pointer;
+          transform: scale(1.1); }
+      .container ul li .task-input {
+        padding: 8px 15px;
+        width: 276px;
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        font-size: 0.8rem; }

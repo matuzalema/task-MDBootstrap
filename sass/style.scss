@@ -23,7 +23,7 @@ html {
 
 //components
  .button {
-    margin: 10px;
+    margin: 8px 5px;
     width: 100px;
     padding: 10px;
     background-color: $main-btn-color;
@@ -79,8 +79,8 @@ html {
         align-items: center;
 
         .input-add-task {
-            width: 250px;
-            height: 35px;
+            width: 350px;
+            height: 38px;
             padding: 5px 10px;
             font-size: 0.8rem;
             color: #2d3436;
@@ -90,26 +90,74 @@ html {
         }
 
         .btn-add-task {
-            width: 100px;
+            width: 60px;
+            height: 38px;
+            margin-left: -1px;
             background: $second-color;
             color: $font-color;
+            border-radius: 0 5px 5px 0;
+            &:hover {
+                transform: scale(1);
+                background-color: #cbc419;
+            }
         }
     }
+    ul {
+        padding: 0;
+        width: 410px;
 
-    ul li {
-        list-style-type: none;
-        font-size: 1rem;
-        line-height: 2.5rem;
+        li {
+            list-style-type: none;
+            font-size: 1rem;
+            line-height: 2.5rem;
+            
+            .fa-trash {
+                margin-left: 15px;
+                color: #fff;
+                transition: 0.5s;
 
-        .fa-trash {
-            margin-left: 15px;
-            color: #FA8225;
-            transition: 0.5s;
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.2);
+                    color: #b5561f;
+                }
+            }
 
-            &:hover {
-                cursor: pointer;
-                transform: scale(1.2);
-                color: #b5561f;
+            .fa-user-edit {
+                margin-right: 10px;
+                font-size: 1.1rem;
+                position: relative;
+                top: 3px;
+                transition: 0.5s;
+
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.1);
+                }
+            }
+
+            .save-btn {
+                margin-right: 10px;
+                padding: 7px 10px;
+                border-radius: 5px;
+                color: #fff;
+                background-color: #07be83;
+                border: none;
+                font-size: 0.8rem;
+                transition: 0.5s;
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.1);
+                }
+            }
+
+            .task-input {
+                padding: 8px 15px;
+                width: 276px;
+                background-color: transparent;
+                border: none;
+                color: #fff;
+                font-size: 0.8rem;
             }
         }
     }

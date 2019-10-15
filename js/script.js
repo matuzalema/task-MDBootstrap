@@ -39,15 +39,45 @@ buttonClear.addEventListener('click', () => {
 
 function addTask(task) {
     //add HTML part to new task
-    const liFromInput = document.createElement('li');
-    toDoList.appendChild(liFromInput);
-    liFromInput.innerHTML = task;
-    liFromInput.insertAdjacentHTML('beforeend', '<i class="fas fa-trash"></i>');
+    const li = document.createElement('li');
+    toDoList.appendChild(li);
+
+    //add input
+    const input = document.createElement('input');
+    li.insertAdjacentHTML('afterbegin', '<input type="text" class="task-input" disabled></input>');
+    
+    const inputFields = document.getElementsByClassName("task-input");
+    const inputList = inputFields[inputFields.length - 1];
+    inputList.setAttribute("value", task);
+
+    
+    //edit
+    li.insertAdjacentHTML('afterbegin', '<i class="fas fa-user-edit"></i>');
+    
+    const edit = document.querySelectorAll('.fa-user-edit');
+
+    edit[edit.length-1].addEventListener('click', function(){
+        inputList.removeAttribute("disabled");
+        inputList.setAttribute("style", "background-color: #fff; color: #2d3436;");
+    })
+
+    //save edit button
+    li.insertAdjacentHTML('afterbegin', '<button type="submit" class="save-btn">save</button>');
+    const saveBtn = document.getElementsByClassName("save-btn");
+    const saveBtnList = saveBtn[saveBtn.length-1];
+
+    saveBtnList.addEventListener('click', function () {
+        inputList.setAttribute("disabled", true);
+        inputList.setAttribute("style", "background-color: transparent; color: #fff;");
+    })
+
+    li.insertAdjacentHTML('beforeend', '<i class="fas fa-trash"></i>');
 
     //add eventListener to trash
     const trash = document.querySelectorAll(".fa-trash");
     trash[trash.length - 1].addEventListener('click', function () {
         this.parentNode.remove();
+        taskNumber = 0;
     });
 }
 
