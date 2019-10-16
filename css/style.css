@@ -57,7 +57,7 @@ html {
     -ms-flex-align: center;
         align-items: center; }
     .container .form-add-task .input-add-task {
-      width: 350px;
+      width: 550px;
       height: 38px;
       padding: 5px 10px;
       font-size: 0.8rem;
@@ -75,8 +75,7 @@ html {
         transform: scale(1);
         background-color: #cbc419; }
   .container ul {
-    padding: 0;
-    width: 410px; }
+    padding: 0; }
     .container ul li {
       list-style-type: none;
       font-size: 1rem;
@@ -88,7 +87,7 @@ html {
         .container ul li .fa-trash:hover {
           cursor: pointer;
           transform: scale(1.2);
-          color: #b5561f; }
+          color: #ff8100; }
       .container ul li .fa-user-edit {
         margin-right: 10px;
         font-size: 1.1rem;
@@ -106,7 +105,8 @@ html {
         background-color: #07be83;
         border: none;
         font-size: 0.8rem;
-        transition: 0.5s; }
+        transition: 0.5s;
+        width: 70px; }
         .container ul li .save-btn:hover {
           cursor: pointer;
           transform: scale(1.1); }
@@ -117,3 +117,19 @@ html {
         border: none;
         color: #fff;
         font-size: 0.8rem; }
+      .container ul li .btn-move {
+        border: none;
+        margin-left: 10px;
+        padding: 7px 10px;
+        border-radius: 5px;
+        color: #fff;
+        background-color: #07be83;
+        border: none;
+        font-size: 0.8rem;
+        transition: 0.5s;
+        width: 70px; }
+        .container ul li .btn-move:hover {
+          cursor: pointer;
+          transform: scale(1.1); }
+      .container ul li .btn-down {
+        background-color: #175673; }
